@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .container{
+        background-color: rgb(181, 243, 181);
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    h3#md{
+        display: none;
+    }
+
+    h3#lg{
+        display: none;
+    }
+
+    h3#xl{
+        display: none;
+    }
+    /*MEDIA QUEIRES*/
+    /*Breakpoints
+        de 640px ate 767 px - small
+        de 768px ate 1023px- Medium
+        de 1024px ate 1279px- Large
+        de 1280px ate 1535px - Extra Large
+    */
+
+    @media screen and (min-width: 768px){
+        .container{
+            background-color: rgb(183, 142, 221);
+        }
+        h3#sm{
+            display: none;
+        }
+
+        h3#lg{
+            display: none;
+        }
+
+        h3#xl{
+            display: none;
+        }
+
+        h3#md{
+            display: block;
+        }
+            
+    }
+    
+    @media screen and (min-width: 1024px){
+        .container{
+            background-color: rgb(218, 89, 89);
+        }
+        h3#sm{
+            display: none;
+        }
+
+        h3#lg{
+            display: block;
+        }
+
+        h3#xl{
+            display: none;
+        }
+
+        h3#md{
+            display: none;
+        }
+    }
+    @media screen and (min-width: 1280px){
+        .container{
+            background-color: rgb(224, 224, 90);
+        }
+        h3#sm{
+            display: none;
+        }
+
+        h3#lg{
+            display: none;
+        }
+
+        h3#xl{
+            display: block;
+        }
+
+        h3#md{
+            display: none;
+        }
+
+    }   
+</style>
+<body>
+    <div class="container">
+        <h1>Media queries</h1>
+        <h3 id="sm">Small </h3>
+        <h3 id="md">Medium </h3>
+        <h3 id="lg">Large</h3>
+        <h3 id="xl">Extra Large </h3>
+    </div>
+</body>
+</html>
